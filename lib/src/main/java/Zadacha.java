@@ -8,7 +8,7 @@ public class Zadacha {
         Arrays.sort(mass);
         minValue = mass[0];
         maxValue = mass[mass.length-1];
-        System.out.println("minValue"+" " + minValue +"\n"+ "maxValue" + " " + maxValue);
+        System.out.print("minValue"+" " + minValue +"\n"+ "maxValue" + " " + maxValue);
 
     }
 }
