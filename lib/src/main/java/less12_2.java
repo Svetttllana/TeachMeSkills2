@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.function.Consumer;
 
 public class less12_2 {
-static Consumer<String> printUpperCase = str -> { // создали свой собственный консьюмер
+static Consumer<String> printUpperCase = str -> { // создали свой собственный консьюмер. почитать нахуя нужен косьюмер и что это
     System.out.print(str.toUpperCase()+ " ");
 };
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ static Consumer<String> printUpperCase = str -> { // создали свой с�
 //
 //        }
 
-//        users.stream().map(User::getName).forEach(   // метод должен принять в себя акой-то эллемент и что-то там консьюмер. что-то с консьюмером сделать
+//        users.stream().map(User::getName).forEach(   // метод должен принять в себя акой-то эллемент и что-то там консьюмер. что-то с консьюмером сделать(спросить у друзей )
 //                System.out::print
 //        );
 
@@ -55,7 +55,7 @@ class User{
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "name='" + name + '\'' +               // ну тут мы переопределили тустринг чтобы значения вывести эт запомнить над
                 '}';
     }
 }

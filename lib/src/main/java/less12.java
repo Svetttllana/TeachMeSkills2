@@ -41,7 +41,7 @@ public class less12 {
 
 
 
-        Stream<String> streamMap= Stream.of("apple","banana","kiwi", "apple"); // мэп преобразует объекты и добавляет запятую тлт люблй другой знак; на выходе я получаю не сам стрим, а строку.
+        Stream<String> streamMap= Stream.of("apple","banana","kiwi", "apple"); // мэп преобразует объекты и добавляет запятую или люблй другой знак; на выходе я получаю не сам стрим, а строку.
         String mappedString = streamMap.map(Object::toString).collect(
                 Collectors.joining(",") //
                 );
