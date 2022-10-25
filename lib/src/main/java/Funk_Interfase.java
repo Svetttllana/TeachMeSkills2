@@ -10,7 +10,7 @@ public class Funk_Interfase {
         boolean result = operationable2.calculate2(10, 20);
         System.out.println(result);
 
-        // так бы было до лямбды или без неё
+        // так бы было до лямбды или без неё/  это типа через анонимный класс
 //        Operationable operationable = new Operationable() {
 //            @Override
 //            public int calculate(int a, int b) {
@@ -26,13 +26,13 @@ public class Funk_Interfase {
     // когда мы используем  интерфейс для лямбды мы используем фанкшионал интерфейс. он конкретно говорит о ламбде
     @FunctionalInterface
     interface Operationable {
-        int calculate(int a, int b); // это предикейт интерфейс; лямбда предикейт
+        int calculate(int a, int b); // эт интерф с использ лямбда-выражений
 
 
     }
 
-
+// Predicate
     interface Operationable2<T> {
-        boolean calculate2(T t, T t1);
+        boolean calculate2(T t, T t1); // выучить интерфейсы. это предикат.
     }
 }
